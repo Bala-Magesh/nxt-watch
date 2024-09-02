@@ -1,0 +1,10 @@
+.trending-video-thumbnail {
+  width: 45%;
+}
+
+.trending-video-li {
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+}

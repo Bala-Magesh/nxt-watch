@@ -1,0 +1,21 @@
+.dark-mode-title-icon {
+  color: #94a3b8;
+  width: 28px;
+  height: 28px;
+}
+
+.light-mode-title-icon {
+  color: #94a3b8;
+  width: 28px;
+  height: 28px;
+}
+
+.red-title-icon {
+  color: #ff0b37;
+  width: 28px;
+  height: 28px;
+}
+
+.left-menu-bar-container {
+  width: 20vw;
+}

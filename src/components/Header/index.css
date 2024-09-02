@@ -1,0 +1,43 @@
+.header-app-logo {
+  width: 200px;
+}
+
+.light-mode-icon {
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+.dark-mode-icon {
+  color: black;
+  height: 24px;
+  width: 24px;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.profile-icon {
+  color: #64748b;
+  height: 31px;
+  width: 31px;
+  margin-left: 32px;
+}
+
+.header-sub-container {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  border-radius: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 80px;
+  margin-left: 32px;
+  font-size: 14px;
+  font-weight: 400;
+}
