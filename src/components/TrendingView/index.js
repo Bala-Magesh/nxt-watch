@@ -9,7 +9,7 @@ import TrendingVideoCard from '../TrendingVideoCard'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
 
-import {BsFire} from 'react-icons/bs'
+import { FaFire } from "react-icons/fa";
 
 class TrendingView extends Component {
   state = {isLoading: true, videoList: []}
@@ -62,7 +62,7 @@ class TrendingView extends Component {
             ) : (
               <>
                 <div>
-                  <BsFire style={{color: '#ff0b37'}} />
+                  <FaFire style={{color: '#ff0b37'}} />
                   <h1>Trending</h1>
                 </div>
                 <ul className="trending-ul">

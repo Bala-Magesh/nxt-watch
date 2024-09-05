@@ -8,9 +8,9 @@ import ColorModeContext from '../../context/ColorModeContext'
 import {StyledUl, StyledLi, StyledTopic} from './styledComponents'
 
 import {AiFillHome} from 'react-icons/ai'
-import {BsFire} from 'react-icons/bs'
+import {FaFire} from 'react-icons/fa'
 import {IoGameController} from 'react-icons/io5'
-import {PiListPlusBold} from 'react-icons/pi'
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 class LeftMenuBar extends Component {
   state = {selectedMenu: 'home'}
@@ -60,7 +60,7 @@ class LeftMenuBar extends Component {
                     isSelected={selectedMenu === 'trending'}
                     onClick={() => this.onChangeMenuItem('trending')}
                   >
-                    <BsFire
+                    <FaFire
                       className={
                         selectedMenu === 'trending'
                           ? 'red-title-icon'
@@ -102,7 +102,7 @@ class LeftMenuBar extends Component {
                     isSelected={selectedMenu === 'savedVideos'}
                     onClick={() => this.onChangeMenuItem('savedVideos')}
                   >
-                    <PiListPlusBold
+                    <GiHamburgerMenu
                       className={
                         selectedMenu === 'savedVideos'
                           ? 'red-title-icon'

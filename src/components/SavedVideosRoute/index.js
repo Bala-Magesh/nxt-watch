@@ -8,7 +8,7 @@ import Header from '../Header'
 import LeftMenuBar from '../LeftMenuBar'
 import TrendingVideoCard from '../TrendingVideoCard'
 
-import {PiListPlusBold} from 'react-icons/pi'
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 class SavedVideosRoute extends Component {
   render() {
@@ -22,7 +22,7 @@ class SavedVideosRoute extends Component {
               <LeftMenuBar />
               <div>
                 <div>
-                  <PiListPlusBold style={{color: '#ff0b37'}} />
+                  <GiHamburgerMenu style={{color: '#ff0b37'}} />
                   <h1>Saved Videos</h1>
                 </div>
                 {savedVideos.length === 0 ? (

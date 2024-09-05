@@ -7,8 +7,9 @@ import ColorModeContext from '../../context/ColorModeContext'
 
 import {HeaderContainer} from './styledComponents'
 
-import {MdOutlineLightMode, MdDarkMode} from 'react-icons/md'
-import {HiMiniUserCircle} from 'react-icons/hi2'
+import {MdBrightness4} from 'react-icons/md'
+import { FaMoon } from "react-icons/fa"
+import { CgProfile } from "react-icons/cg";
 
 import Button from 'react-bootstrap/Button'
 
@@ -25,32 +26,32 @@ class Header extends Component {
             <HeaderContainer isDarkMode={isDarkMode}>
               <div>
                 <img
-                  className='header-app-logo'
+                  className="header-app-logo"
                   src={appLogoUrl}
-                  alt='nxt-watch-logo'
+                  alt="nxt-watch-logo"
                 />
               </div>
-              <div className='header-sub-container'>
+              <div className="header-sub-container">
                 <button
-                  className='icon-button'
+                  className="icon-button"
                   onClick={() => toggleColorMode()}
-                  data-testid='theme'
+                  data-testid="theme"
                 >
                   {isDarkMode ? (
-                    <MdOutlineLightMode className='light-mode-icon' />
+                    <MdBrightness4 className="light-mode-icon" />
                   ) : (
-                    <MdDarkMode className='dark-mode-icon' />
+                    <FaMoon className="dark-mode-icon" />
                   )}
                 </button>
-                <button className='icon-button'>
-                  <HiMiniUserCircle className='profile-icon' />
+                <button className="icon-button">
+                  <CgProfile className="profile-icon" />
                 </button>
                 {isDarkMode ? (
-                  <Button className='logout-button' variant='outline-light'>
+                  <Button className="logout-button" variant="outline-light">
                     Logout
                   </Button>
                 ) : (
-                  <Button className='logout-button' variant='outline-dark'>
+                  <Button className="logout-button" variant="outline-dark">
                     Logout
                   </Button>
                 )}
